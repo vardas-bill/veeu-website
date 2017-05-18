@@ -11,6 +11,11 @@
     background: -moz-linear-gradient(left, #9500FF, #21A8FF); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to left, #9500FF , #21A8FF); /* Standard syntax (must be last) */
 }
+
+.light-blue-background {
+    background: #21A8FF;
+}
+
 .white-text {
     color: white;
 }
@@ -38,6 +43,8 @@
     flex-direction: column;
     justify-content: flex-start
 }
+
+/* HOME SECTION */
 .button-container {
     margin-top: 20px;
 }
@@ -71,6 +78,8 @@
     width: 150px;
     height: 50px;
 }
+
+/* ABOUT SECTION */
 .about-height {
 
 }
@@ -96,6 +105,8 @@
     line-height: normal;
     margin-bottom: 20px;
 }
+
+/* FEATURES SECTION */
 .features-container {
 
 }
@@ -138,6 +149,7 @@
     font-weight: 200;
 }
 
+/* COMPETITION SECTION */
 .comp-image {
     max-width:250px;
     min-width:250px;
@@ -164,12 +176,15 @@
     border-color: white;
     border-width: 1px;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 100;
     padding: 4px;
     background-color: white;
     width: 300px;
-    height: 30px;
+    height: 26px;
+}
+.comp-message {
+    height: 80px;
 }
 .comp-button {
     margin-top: 40px;
@@ -184,7 +199,10 @@
     color: white;
     background-color: transparent;
 }
-
+.comp-button:hover {
+    background-color: white;
+    color: black;
+}
 
 body {
     font: 400 15px Lato, sans-serif;
