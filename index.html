@@ -169,18 +169,20 @@
                 It's free and quick to enter, and you can get as many entries into the
                 competition as you like.
             </div>
-            <div class="comp-label">
-                Name
-            </div>
-            <input id="competitionUserName" class="comp-input" type="text">
-            <br /><br />
-            <div class="comp-label">
-                Email
-            </div>
-            <input id="competitionUserEmail" class="comp-input" type="email">
-            <div class="">
-                <button class="comp-button">Submit</button>
-            </div>
+            <form action="mailto:mike@veeu.com?subject=VeeU Competition Entry" method="post" enctype="text/plain">
+                <div class="comp-label">
+                    Name
+                </div>
+                <input id="competitionUserName" class="comp-input" type="text" name="Name">
+                <br /><br />
+                <div class="comp-label">
+                    Email
+                </div>
+                <input id="competitionUserEmail" class="comp-input" type="email" name="Email">
+                <div class="">
+                    <button type="submit" class="comp-button">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -203,23 +205,25 @@
             </div>
         </div>
         <div class="col-sm-6 text-md-left">
-            <div class="comp-label">
-                Name
-            </div>
-            <input id="contactUserName" class="comp-input" type="text">
-            <br /><br />
-            <div class="comp-label">
-                Email
-            </div>
-            <input id="contactUserEmail" class="comp-input" type="email">
-            <br /><br />
-            <div class="comp-label">
-                Message
-            </div>
-            <textarea id="contactMessage" class="comp-input comp-message" rows="4" cols="50"></textarea>
-            <div class="">
-                <button class="comp-button">Submit</button>
-            </div>
+            <form action="mailto:mike@veeu.com?subject=VeeU Contact Form" method="post" enctype="text/plain">
+                <div class="comp-label">
+                    Name
+                </div>
+                <input id="contactUserName" class="comp-input" type="text" name="Name">
+                <br /><br />
+                <div class="comp-label">
+                    Email
+                </div>
+                <input id="contactUserEmail" class="comp-input" type="email" name="Email">
+                <br /><br />
+                <div class="comp-label">
+                    Message
+                </div>
+                <textarea id="contactMessage" class="comp-input comp-message" name="Message" rows="4" cols="50"></textarea>
+                <div class="">
+                    <button type="submit" class="comp-button">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
