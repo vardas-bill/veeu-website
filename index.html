@@ -9,6 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="./css/veeu.css" rel="stylesheet" type="text/css">
 
@@ -21,11 +22,13 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-toggleable-sm navbar-light bg-faded our-navbar">
+<nav class="navbar navbar-toggleable-sm navbar-inverse bg-faded our-navbar">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#home"><img class="logo-navbar" src="./images/logo_veeu.svg"></a>
+    <a class="navbar-brand" href="#home">
+        <img class="logo-navbar" src="./images/logo_veeu.svg">
+    </a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -54,10 +57,10 @@
             <img class="home-image" src="./images/bg_home.png">
         </div>
         <div class="col-sm-6 mb-3 vertically-center text-md-left">
-            <div class="home-title ">
-                <div class="" >Brand-new way to <br /> VeeU your social media
+
+                <div class="home-title" >Brand-new way to <br /> VeeU your social media
                 </div>
-            </div>
+
 
             <div class="button-container">
                 <button class="learn-more-button mr-md-3">LEARN MORE</button>
@@ -76,7 +79,7 @@
 <div id="about" class="container-fluid">
     <div class="row text-center">
         <div class="col-sm-6 mb-3">
-            <img class="col-sm-6 about-image" src="./images/bg_v.png">
+            <img class="img-fluid about-image" src="./images/bg_v.png">
         </div>
         <div class="col-sm-6 mb-3 about-side-text vertically-center text-md-left">
             <div class="about-title">
@@ -99,7 +102,7 @@
         </div>
     </div>
     <div class="row features-image-row text-left">
-        <img class="features-image" src="./images/bg_keyfeature.png">
+        <img class="features-image h-100" src="./images/bg_keyfeature.png">
     </div>
 </div>
 
@@ -124,7 +127,10 @@
                     <div class="features-icon-text">Apply Vs to your images. 100 Vs means that 100 people will see your image</div>
                 </div>
             </div>
-            <br><br>
+            <div class="hidden-xs-down">
+                <br />
+                <br />
+            </div>
             <div class="row">
                 <div class="col-sm-4">
                     <img class="features-icon" src="./images/icon_filters.svg">
@@ -195,7 +201,6 @@
             <div class="comp-label">
                 E-mail: info@veeu.co
             </div>
-        </div>
         </div>
         <div class="col-sm-6 text-md-left">
             <div class="comp-label">
