@@ -1,13 +1,14 @@
-body {
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 .xxx:hover {
     background-color: black;
 }
 
 .logo-navbar {
     width: 100px;
-    height: 100px;
     margin-top: 0px;
 }
 
@@ -37,7 +38,39 @@ body {
     justify-content: flex-start
 }
 
+.custom-button {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 15px;
+    width: 220px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+}
+.custom-button:hover {
+    color: #21A8FF;
+    cursor: pointer;
+    background-color: white;
+}
+.title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
 /* HOME SECTION */
+
+#getapp {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hand-swipe {
+    margin-bottom: 0 !important;
+}
+
 .home-container {
     margin-top: -60px;
 }
@@ -47,18 +80,19 @@ body {
     width: 300px;
 }
 .home-title {
-    font-size: 30px;
-    font-weight: 300;
+    font-weight: bold;
     line-height: normal;
     margin-bottom: 20px;
+    text-align: left;
 }
+
+
 .button-container {
     margin-top: 20px;
 }
 .learn-more-button {
     margin-bottom: 20px;
     padding-top: 4px;
-    background-color: transparent;
     border-color: white;
     border-width: 1px;
     border-style: solid;
@@ -75,18 +109,60 @@ body {
     width: 150px;
 }
 .app-store-button-container {
-    margin-top: 20px;
+    margin-top: 60px;
 }
-.app-store-button {
-    width: 150px;
-    height: 50px;
+.store-button {
+    width: 170px;
+    margin-right: 40px;
 }
-.google-play-button {
-    width: 150px;
-    height: 50px;
+
+.menu-item {
+    color: white !important;
+    transition: 0s;
+    font-size: 12px;
+    width: auto;
+    border: none;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    color: #21A8FF !important;
+    transition: 0s;
+}
+
+
+@media screen and (max-width: 768px){
+    .title {
+        font-size: 40px;
+    }
+    .custom-button {
+        width: 120px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .store-button {
+        width: 120px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .title {
+        font-size: 25px;
+        text-align: center;
+    }
 }
 
 /* ABOUT SECTION */
+@media screen and (max-width: 576px) {
+    #about {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+        padding-top: 40px;
+    }
+}
+
 .about-height {
 
 }
@@ -99,18 +175,38 @@ body {
     margin-top: -10px;
     margin-bottom: 0px;
 }
+
 .about-title {
-    font-size: 30px;
-    font-weight: 600;
     color: #797979;
     line-height: normal;
     margin-bottom: 20px;
 }
 .about-text {
-    font-size: 20px;
+    color: #797979;
+    font-size: 30px;
     font-weight: 200;
     line-height: normal;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .about-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .about-side-text{
+        position: absolute;
+        margin: 0;
+        top: 0; left: 0; bottom: 0; right: 0;
+    }
+    .about-image {
+        width: 100%;
+    }
+    .about-text {
+        font-size: 15px;
+    }
 }
 
 /* FEATURES SECTION */
@@ -120,8 +216,9 @@ body {
 .features-heading {
     margin-top: -30px;
     padding-bottom: 0px;
-    font-size: 30px;
-    font-weight: 600;
+}
+.features-row{
+    width: 100%;
 }
 .features-image-row {
     margin-top: -10px;
@@ -139,77 +236,140 @@ body {
     width:200px;
 }
 .features-icon {
-    max-width: 50px;
+    max-width: 80px;
     margin-bottom: 10px;
 }
+
 .features-icon-title {
     color: #95989A;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold;
 }
 .features-icon-text {
+    margin: auto;
     margin-top: -4px;
     color: #95989A;
     font-size: 14px;
     font-weight: 200;
+    max-width: 220px;
 }
 
 /* COMPETITION SECTION */
+@media screen and (max-width: 576px) {
+    #competition {
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+
+    #contact {
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+}
+
 .comp-image {
     max-width:250px;
     min-width:250px;
     width:250px;
 }
 .comp-title {
-    font-size: 30px;
-    font-weight: 600;
     line-height: normal;
     margin-bottom: 20px;
 }
 .comp-text {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 200;
     line-height: normal;
     margin-bottom: 20px;
 }
+@media screen and (max-width: 768px){
+    .comp-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .comp-text {
+        font-size: 15px;
+    }
+}
+
 .comp-label {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 100;
 }
+
+@media screen and (max-width: 768px) {
+    .comp-label {
+        font-size: 12px;
+    }
+}
+
+.comp-form {
+    width: 525px;
+    max-width: 60vw;
+    margin: auto;
+    margin-left: 0;
+}
+
+.comp-wrapper {
+    display: inline-block;
+}
+
 .comp-input {
     border-style: solid;
     border-color: white;
     border-width: 1px;
     color: black;
-    font-size: 14px;
+    font-size: 30px;
     font-weight: 100;
     padding: 4px;
     background-color: white;
-    width: 300px;
+    width: 100%;
     max-width: 60vw;
-    height: 26px;
+    height: 55px;
 }
+@media screen and (max-width: 768px){
+    .comp-form {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .comp-input {
+        max-width: 90vw;
+    }
+
+    .comp-form {
+        max-width: 90vw;
+    }
+}
+
 .comp-message {
-    height: 80px;
+    height: 155px;
+    font-size: 18px;
 }
 .comp-button {
     margin-top: 40px;
     border-style: solid;
     border-color: white;
     border-width: 1px;
-    border-radius: 12px;
-    height: 24px;
-    width: 100px;
-    font-size: 12px;
+    border-radius: 15px;
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
     font-weight: 100;
     color: white;
     background-color: transparent;
 }
 .comp-button:hover {
-    background-color: white;
     color: black;
+    cursor: pointer;
 }
-
+.contact-row {
+    width: 100%;
+}
 
 
 body {
@@ -334,7 +494,6 @@ h4 {
     color: #fff !important;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
     background-color: #fff !important;
 }
 .navbar-default .navbar-toggle {

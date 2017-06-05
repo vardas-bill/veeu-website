@@ -15,41 +15,44 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="./css/veeu.css" rel="stylesheet" type="text/css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-toggleable-sm navbar-inverse bg-faded our-navbar">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#home">
+    <a class="navbar-brand" href="#myPage">
         <img class="logo-navbar" src="./images/logo_veeu.svg">
     </a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#about">ABOUT <span class="sr-only">(current)</span></a>
+                <a class="nav-link menu-item" href="#about">ABOUT <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#features">FEATURES</a>
+                <a class="nav-link menu-item" href="#features">FEATURES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#getapp">GET APP</a>
+                <a class="nav-link menu-item" href="#getapp">GET APP</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#competition">COMPETITION</a>
+                <a class="nav-link menu-item" href="#competition">COMPETITION</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">CONTACT</a>
+                <a class="nav-link menu-item" href="#contact">CONTACT</a>
             </li>
         </ul>
     </div>
@@ -58,24 +61,30 @@
 
 <div id="getapp" class="container-fluid blue-background white-text">
     <div class="row text-center home-container">
-        <div class="col-sm-6 mb-3">
-            <img class="home-image" src="./images/bg_home.png">
-        </div>
-        <div class="col-sm-6 mb-3 vertically-center text-md-left">
+        <div class="col-sm-6 push-sm-6 mb-3 col-xs-12 vertically-center text-md-left">
 
-                <div class="home-title" >Brand-new way to <br /> VeeU your social media
-                </div>
+            <div class="title home-title">
+                Brand-new way to <br/>
+                VeeU your social media
+            </div>
 
 
             <div class="button-container">
-                <button class="learn-more-button mr-md-3">LEARN MORE</button>
-                <button class="get-app-button ">GET APP</button>
+                <button class="mr-md-3 custom-button">LEARN MORE</button>
+                <button class="custom-button">GET APP</button>
             </div>
 
             <div class="app-store-button-container">
-                <img class="app-store-button mt-xs-3 mr-md-3" src="./images/app_store.png">
-                <img class="google-play-button mt-xs-3" src="./images/google_play.png">
+                <a href="#about">
+                    <img class="store-button mt-xs-3 mr-md-3" src="./images/app_store.png">
+                </a>
+                <a href="#about">
+                    <img class="store-button mt-xs-3" src="./images/google_play.png">
+                </a>
             </div>
+        </div>
+        <div class="col-sm-6 pull-sm-6 mb-3 hand-swipe">
+            <img class="home-image" src="./images/bg_home.png">
         </div>
     </div>
 </div>
@@ -87,21 +96,22 @@
             <img class="img-fluid about-image" src="./images/bg_v.png">
         </div>
         <div class="col-sm-6 mb-3 about-side-text vertically-center text-md-left">
-            <div class="about-title">
-                New social network coming soon
+            <div class="title about-title">
+                New social network<br>
+                coming soon
             </div>
             <div class="about-text">
-                Go to the <a href="#competition">competition page</a>, fill in your
-                details, and we will email you with more
+                Go to the <a href="#competition">competition page</a>, fill in your<br>
+                details, and we will email you with more<br>
                 information when we're ready to launch
             </div>
         </div>
     </div>
 </div>
 
-
+<!-- FEATURES -->
 <div id="features" class="container-fluid blue-background white-text features-container">
-    <div class="row features-heading">
+    <div class="row features-heading title">
         <div class="col-sm-6 offset-sm-6">
             Key Features
         </div>
@@ -113,8 +123,8 @@
 
 
 <div class="container-fluid d-flex">
-    <div class="row text-center  align-items-center">
-        <div class="col-sm-8 offset-sm-1">
+    <div class="row text-center  align-items-center features-row">
+        <div class="col-lg-8 col-md-12">
             <div class="row">
                 <div class="col-sm-4">
                     <img class="features-icon" src="./images/icon_swipe.svg">
@@ -133,8 +143,8 @@
                 </div>
             </div>
             <div class="hidden-xs-down">
-                <br />
-                <br />
+                <br/>
+                <br/>
             </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -154,37 +164,37 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 text-center">
+        <div class="col-sm-2 hidden-md-down text-center">
             <img class="features-image2" src="./images/bg_keyfeature2.png">
         </div>
     </div>
 </div>
 
-
+<!-- COMPETITION -->
 <div id="competition" class="container-fluid text-center d-flex blue-background white-text">
     <div class="row text-center align-items-center">
-        <div class="col-sm-6">
+        <div class="col-sm-6 hidden-sm-down">
             <img class="comp-image" src="./images/bg_comp.png">
         </div>
         <div class="col-sm-6 text-md-left">
-            <div class="comp-title">
+            <div class="title comp-title">
                 Want the chance to win 1% of VeeU?
             </div>
             <div class="comp-text">
                 It's free and quick to enter, and you can get as many entries into the
                 competition as you like.
             </div>
-            <form action="mailto:mike@veeu.com?subject=VeeU Competition Entry" method="post" enctype="text/plain">
+            <form action="mailto:mike@veeu.com?subject=VeeU Competition Entry" method="post" enctype="text/plain" class="comp-form text-left">
                 <div class="comp-label">
                     Name
                 </div>
                 <input id="competitionUserName" class="comp-input" type="text" name="Name ">
-                <br /><br />
+                <br/><br/>
                 <div class="comp-label">
                     Email
                 </div>
                 <input id="competitionUserEmail" class="comp-input" type="email" name="Email Address ">
-                <div class="">
+                <div class="text-center">
                     <button type="submit" class="comp-button">Submit</button>
                 </div>
             </form>
@@ -192,40 +202,48 @@
     </div>
 </div>
 
-
+<!-- CONTACT -->
 <div id="contact" class="container-fluid text-center d-flex light-blue-background white-text">
-    <div class="row text-center align-items-center">
-        <div class="col-sm-6 offset-sm-1 text-md-left">
-            <div class="comp-title">
-                Contact
-            </div>
-            <div class="comp-text">
-                Fill in the form to contact us. We want to hear from you!
-            </div>
-            <div class="comp-label">
-                Address: Warrington, United Kingdom
-            </div>
-            <div class="comp-label">
-                E-mail: info@veeu.co
+    <div class="row text-center contact-row">
+        <div class="col-md-6" style="padding-right: 0;">
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="comp-wrapper text-left">
+
+                        <div class="title comp-title">
+                            Contact
+                        </div>
+                        <div class="comp-text">
+                            Fill in the form to contact us.<br>
+                            We want to hear from you!
+                        </div>
+                        <div class="comp-label">
+                            Address: Warrington, United Kingdom
+                        </div>
+                        <div class="comp-label">
+                            E-mail: info@veeu.co
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-sm-6 text-md-left">
-            <form action="mailto:mike@veeu.com?subject=VeeU Contact Form" method="post" enctype="text/plain">
+        <div class="col-md-6" style="padding-right: 0;">
+            <form action="mailto:mike@veeu.com?subject=VeeU Contact Form" method="post" enctype="text/plain" class="comp-form text-left">
                 <div class="comp-label">
                     Name
                 </div>
                 <input id="contactUserName" class="comp-input" type="text" name="Name ">
-                <br /><br />
+                <br/><br/>
                 <div class="comp-label">
                     Email
                 </div>
                 <input id="contactUserEmail" class="comp-input" type="email" name="Email Address ">
-                <br /><br />
+                <br/><br/>
                 <div class="comp-label">
                     Message
                 </div>
                 <textarea id="contactMessage" class="comp-input comp-message" name="Message" rows="4" cols="50"></textarea>
-                <div class="">
+                <div class="text-center">
                     <button type="submit" class="comp-button">Submit</button>
                 </div>
             </form>
@@ -234,14 +252,14 @@
 </div>
 
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
 // Select all links with hashes
         $('a[href*="#"]')
         // Remove links that don't actually link to anything
             .not('[href="#"]')
             .not('[href="#0"]')
-            .click(function(event) {
+            .click(function (event) {
                 // On-page links
                 if (
                     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
@@ -257,7 +275,7 @@
                         event.preventDefault();
                         $('html, body').animate({
                             scrollTop: target.offset().top
-                        }, 1000, function() {
+                        }, 1000, function () {
                             // Callback after animation
                             // Must change focus!
                             var $target = $(target);
@@ -265,9 +283,10 @@
                             if ($target.is(":focus")) { // Checking if the target was focused
                                 return false;
                             } else {
-                                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                                 $target.focus(); // Set focus again
-                            };
+                            }
+                            ;
                         });
                     }
                 }
