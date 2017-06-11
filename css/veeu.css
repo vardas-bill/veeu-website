@@ -137,8 +137,8 @@ html, body {
     }
     .custom-button {
         width: 120px;
-        font-size: 14px;
-        margin-top: 5px;
+        font-size: 4vw;
+        margin: 5px;
     }
     .store-button {
         width: 120px;
